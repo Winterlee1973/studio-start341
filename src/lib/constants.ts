@@ -12,8 +12,8 @@ export const PORTFOLIO_ITEMS = [
 ];
 
 export const TEAM_MEMBERS = [
-  { id: "1", name: "Lee Carlin", title: "Co-Founder", email: "lee@start341.com", bio: "Visionary leader with extensive experience in domain investment and digital strategy. Passionate about building valuable online enterprises.", imageUrl: "/images/LeeCarlin.png", dataAiHint: "Lee Carlin" },
-  { id: "2", name: "Jill Zeller", title: "Co-Founder", email: "jill@start341.com", bio: "Strategic thinker specializing in market analysis and business development for digital assets. Committed to innovation and growth.", imageUrl: "/images/JillZeller.png", dataAiHint: "Jill Zeller" },
+  { id: "1", name: "Lee Carlin", title: "Co-Founder", email: "lee@start341.com", bio: "Visionary leader with extensive experience in domain investment and digital strategy. Passionate about building valuable online enterprises.", imageUrl: "/images/Lee.png", dataAiHint: "Lee Carlin" },
+  { id: "2", name: "Jill Zeller", title: "Co-Founder", email: "jill@start341.com", bio: "Strategic thinker specializing in market analysis and business development for digital assets. Committed to innovation and growth.", imageUrl: "/images/Jill.png", dataAiHint: "Jill Zeller" },
 ];
 
 export const NAV_LINKS = [
@@ -22,3 +22,4 @@ export const NAV_LINKS = [
   { href: "#about", label: "About Us" },
   { href: "#contact", label: "Contact" },
 ];
+
