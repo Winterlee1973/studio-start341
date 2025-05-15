@@ -7,7 +7,7 @@ export const MISSION_STATEMENT_LONG = "Start341 is dedicated to acquiring, devel
 export const PORTFOLIO_ITEMS = [
   { id: "1", name: "ApartmentRental.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "apartment logo" },
   { id: "2", name: "IncomeTax.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "finance logo" },
-  { id: "3", name: "PartyRentals.com", imageUrl: "/images/partyrentals-logo.png" },
+  { id: "3", name: "PartyRentals.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "party logo" },
   { id: "4", name: "TrainSchedule.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "train logo" },
 ];
 
