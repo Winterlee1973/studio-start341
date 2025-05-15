@@ -5,10 +5,10 @@ export const MISSION_STATEMENT_SHORT = "Investing in and developing premium digi
 export const MISSION_STATEMENT_LONG = "Start341 is dedicated to acquiring, developing, and monetizing high-value domain names, transforming them into thriving online businesses and valuable digital assets. We focus on strategic growth and innovation in the digital landscape.";
 
 export const PORTFOLIO_ITEMS = [
-  { id: "1", name: "ApartmentRental.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "apartment logo" },
-  { id: "2", name: "IncomeTax.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "finance logo" },
-  { id: "3", name: "PartyRentals.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "party logo" },
-  { id: "4", name: "TrainSchedule.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "train logo" },
+  { id: "1", name: "ApartmentRental.com", imageUrl: "/images/apartmentrental-logo.png", dataAiHint: "apartment logo" },
+  { id: "2", name: "IncomeTax.com", imageUrl: "/images/incometax-logo.png", dataAiHint: "finance logo" },
+  { id: "3", name: "PartyRentals.com", imageUrl: "/images/partyrentals-logo.png", dataAiHint: "party logo" },
+  { id: "4", name: "TrainSchedule.com", imageUrl: "/images/trainschedule-logo.png", dataAiHint: "train logo" },
 ];
 
 export const TEAM_MEMBERS = [
