@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "YOUR_PROJECT_ID_OR_SITE_NAME",
     "source": ".",
     "ignore": [
       "firebase.json",
