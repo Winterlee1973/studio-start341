@@ -14,12 +14,7 @@ export function Hero() {
           {MISSION_STATEMENT_SHORT} We specialize in acquiring, developing, and monetizing premium web properties, turning valuable domain names into thriving digital assets.
         </p>
         <div className="space-x-4">
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="#portfolio">View Portfolio</Link>
-          </Button>
-          <Button asChild variant="outline" size="lg">
-            <Link href="#contact">Get In Touch</Link>
-          </Button>
+          {/* Buttons removed as per request */}
         </div>
       </div>
     </SectionLayout>
