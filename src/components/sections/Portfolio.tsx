@@ -1,3 +1,4 @@
+
 import { PORTFOLIO_ITEMS } from '@/lib/constants';
 import { SectionLayout } from '@/components/shared/SectionLayout';
 import { SectionTitle } from '@/components/shared/SectionTitle';
@@ -7,7 +8,10 @@ export function Portfolio() {
   return (
     <SectionLayout id="portfolio">
       <SectionTitle>Our Premium Web Properties</SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto -mt-6 lg:-mt-10">
+        Showcasing a selection of our prime digital real estate. Our complete portfolio includes these flagship domains and over 100 other valuable web properties.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PORTFOLIO_ITEMS.map((item) => (
           <DomainCard
             key={item.id}

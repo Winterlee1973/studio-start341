@@ -1,3 +1,4 @@
+
 export const APP_NAME = "Start341 Portfolio Showcase";
 
 export const MISSION_STATEMENT_SHORT = "Investing in and developing premium digital real estate.";
@@ -6,8 +7,8 @@ export const MISSION_STATEMENT_LONG = "Start341 is dedicated to acquiring, devel
 export const PORTFOLIO_ITEMS = [
   { id: "1", name: "ApartmentRental.com", description: "Premier platform for apartment searches and rentals.", imageUrl: "https://placehold.co/600x400.png", dataAiHint: "apartment building" },
   { id: "2", name: "IncomeTax.com", description: "Comprehensive resource for income tax information and services.", imageUrl: "https://placehold.co/600x400.png", dataAiHint: "tax finance" },
-  { id: "3", name: "Bicycles.com", description: "The ultimate online destination for cycling enthusiasts.", imageUrl: "https://placehold.co/600x400.png", dataAiHint: "bicycle sport" },
-  { id: "4", name: "Futons.com", description: "Leading e-commerce site for futons and convertible furniture.", imageUrl: "https://placehold.co/600x400.png", dataAiHint: "furniture home" },
+  { id: "3", name: "PartyRentals.com", description: "Your one-stop shop for party equipment and event rentals.", imageUrl: "https://placehold.co/600x400.png", dataAiHint: "party celebration" },
+  { id: "4", name: "TrainSchedule.com", description: "Up-to-date train schedules and booking information.", imageUrl: "https://placehold.co/600x400.png", dataAiHint: "train travel" },
 ];
 
 export const TEAM_MEMBERS = [
