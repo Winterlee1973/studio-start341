@@ -1,7 +1,5 @@
-
 {
   "hosting": {
-    "site": "start341-portfolio-showcase",
     "source": ".",
     "ignore": [
       "firebase.json",
