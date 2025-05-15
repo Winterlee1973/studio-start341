@@ -4,7 +4,6 @@ import { Hero } from '@/components/sections/Hero';
 import { Portfolio } from '@/components/sections/Portfolio';
 import { AboutUs } from '@/components/sections/AboutUs';
 import { Contact } from '@/components/sections/Contact';
-import { DomainStrategy } from '@/components/sections/DomainStrategy';
 
 export default function HomePage() {
   return (
@@ -14,7 +13,6 @@ export default function HomePage() {
         <Hero />
         <Portfolio />
         <AboutUs />
-        <DomainStrategy />
         <Contact />
       </main>
       <Footer />

@@ -5,10 +5,10 @@ export const MISSION_STATEMENT_SHORT = "Investing in and developing premium digi
 export const MISSION_STATEMENT_LONG = "Start341 is dedicated to acquiring, developing, and monetizing high-value domain names, transforming them into thriving online businesses and valuable digital assets. We focus on strategic growth and innovation in the digital landscape.";
 
 export const PORTFOLIO_ITEMS = [
-  { id: "1", name: "ApartmentRental.com", description: "Premier platform for apartment searches and rentals.", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "apartment logo" },
-  { id: "2", name: "IncomeTax.com", description: "Comprehensive resource for income tax information and services.", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "finance logo" },
-  { id: "3", name: "PartyRentals.com", description: "Your one-stop shop for party equipment and event rentals.", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "party logo" },
-  { id: "4", name: "TrainSchedule.com", description: "Up-to-date train schedules and booking information.", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "travel logo" },
+  { id: "1", name: "ApartmentRental.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "apartment logo" },
+  { id: "2", name: "IncomeTax.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "finance logo" },
+  { id: "3", name: "PartyRentals.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "party logo" },
+  { id: "4", name: "TrainSchedule.com", imageUrl: "https://placehold.co/300x150.png", dataAiHint: "train logo" },
 ];
 
 export const TEAM_MEMBERS = [
@@ -20,7 +20,5 @@ export const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#about", label: "About Us" },
-  { href: "#strategy", label: "AI Strategy Tool" },
   { href: "#contact", label: "Contact" },
 ];
-

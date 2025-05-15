@@ -1,4 +1,5 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/suggest-domain-strategy.ts';
+// Intentionally empty after removing suggest-domain-strategy.ts
+// Add new flow imports here when needed
