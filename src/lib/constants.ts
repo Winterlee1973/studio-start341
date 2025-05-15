@@ -1,5 +1,5 @@
 
-export const APP_NAME = "Start341 Portfolio Showcase";
+export const APP_NAME = "Start341.com";
 
 export const MISSION_STATEMENT_SHORT = "Investing in and developing premium digital real estate.";
 export const MISSION_STATEMENT_LONG = "Start341 is dedicated to acquiring, developing, and monetizing high-value domain names, transforming them into thriving online businesses and valuable digital assets. We focus on strategic growth and innovation in the digital landscape.";
