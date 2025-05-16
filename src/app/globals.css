@@ -8,29 +8,29 @@ body {
 
 @layer base {
   :root {
-    --background: 210 17% 98%; /* #F8F9FA - Light Gray */
-    --foreground: 210 10% 23%; /* #343A40 - Dark Gray */
+    --background: 220 33% 98%; /* Subtle blue tint */
+    --foreground: 220 40% 18%; /* Rich dark blue */
 
-    --muted: 210 17% 95%; /* #EFF1F3 - Slightly off-white for muted backgrounds */
-    --muted-foreground: 210 7% 46%; /* #6C757D - Medium Gray for muted text */
+    --muted: 220 25% 95%;
+    --muted-foreground: 220 20% 40%;
 
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 210 10% 23%; /* Dark Gray */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 18%;
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 210 10% 23%; /* Dark Gray */
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 18%;
 
-    --border: 210 14% 89%; /* #DEE2E6 - Light Gray Border */
-    --input: 210 14% 89%; /* Light Gray Input Border */
+    --border: 220 20% 92%;
+    --input: 220 20% 92%;
 
-    --primary: 211 100% 50%; /* #007BFF - Blue */
-    --primary-foreground: 0 0% 100%; /* White */
+    --primary: 248 90% 66%; /* Vibrant purple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 16% 93%; /* #E9ECEF - Lighter Gray for secondary elements */
-    --secondary-foreground: 210 10% 23%; /* Dark Gray */
+    --secondary: 220 25% 97%;
+    --secondary-foreground: 220 40% 18%;
 
-    --accent: 162 72% 45%; /* #20C997 - Teal */
-    --accent-foreground: 0 0% 100%; /* White */
+    --accent: 328 86% 58%; /* Bright pink */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -115,4 +115,32 @@ body {
   main {
     flex-grow: 1;
   }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/80 border border-white/20;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .card-shadow {
+    @apply shadow-[0_8px_30px_rgb(0,0,0,0.07)];
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
 }

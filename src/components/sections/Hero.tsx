@@ -1,20 +1,30 @@
+
 import { Button } from '@/components/ui/button';
 import { MISSION_STATEMENT_SHORT } from '@/lib/constants';
 import { SectionLayout } from '@/components/shared/SectionLayout';
-import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
   return (
-    <SectionLayout id="home" className="bg-secondary/50 text-center">
-      <div className="flex flex-col items-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground mb-6">
+    <SectionLayout id="home" className="relative overflow-hidden bg-gradient-to-b from-secondary/50 to-background min-h-[90vh] flex items-center">
+      <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px)] bg-[size:40px] bg-[position:-1px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:40px] bg-[position:-1px]" />
+      </div>
+      <div className="relative flex flex-col items-center text-center max-w-4xl mx-auto px-4">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight gradient-text mb-8">
           Welcome to Start341
         </h1>
-        <p className="max-w-3xl text-lg md:text-xl text-muted-foreground mb-8">
-          {MISSION_STATEMENT_SHORT} We specialize in acquiring, developing, and monetizing premium web properties, turning valuable domain names into thriving digital assets.
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl leading-relaxed">
+          {MISSION_STATEMENT_SHORT} We transform valuable domains into thriving digital enterprises.
         </p>
-        <div className="space-x-4">
-          {/* Buttons removed as per request */}
+        <div className="flex gap-6">
+          <Button size="lg" className="hover-scale text-lg px-8">
+            View Portfolio <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <Button size="lg" variant="outline" className="hover-scale text-lg px-8">
+            Contact Us
+          </Button>
         </div>
       </div>
     </SectionLayout>
