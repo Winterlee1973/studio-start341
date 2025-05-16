@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
   return (
-    <SectionLayout id="home" className="relative overflow-hidden bg-gradient-to-b from-secondary/50 to-background min-h-[90vh] flex items-center">
+    <SectionLayout id="home" className="relative overflow-hidden bg-gradient-to-b from-secondary/50 to-background min-h-[50vh] flex items-center">
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px)] bg-[size:40px] bg-[position:-1px]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:40px] bg-[position:-1px]" />
@@ -19,12 +19,6 @@ export function Hero() {
           {MISSION_STATEMENT_SHORT} We transform valuable domains into thriving digital enterprises.
         </p>
         <div className="flex gap-6">
-          <Button size="lg" className="hover-scale text-lg px-8">
-            View Portfolio <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button size="lg" variant="outline" className="hover-scale text-lg px-8">
-            Contact Us
-          </Button>
         </div>
       </div>
     </SectionLayout>

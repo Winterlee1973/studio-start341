@@ -21,10 +21,12 @@ export function Header() {
                 href={link.href}
                 className="text-sm font-medium text-muted-foreground transition-all hover:text-primary hover:scale-105"
               >
-                {link.label}
+                {link.label === "Contact" ? null : link.label}
               </Link>
             ))}
-            <Button className="hover-scale">Contact Us</Button>
+            <Link href="mailto:support@start341.com" className="hover-scale">
+              <Button>Contact Us</Button>
+            </Link>
           </nav>
           <div className="md:hidden">
             <Sheet>
@@ -42,7 +44,7 @@ export function Header() {
                       href={link.href}
                       className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      {link.label}
+                      {link.label === "Contact" ? null : link.label}
                     </Link>
                   ))}
                 </nav>
