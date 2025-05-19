@@ -1,32 +1,37 @@
-🚀 Static Site Deployment Guide with Firebase, VS Code, and Firebase Studio
+# 🚀 Static Site Deployment Guide with Firebase, VS Code, and Firebase Studio
 
 This guide documents the full setup we used to deploy a static site using Next.js, Firebase Hosting, and a combination of VS Code and Firebase Studio. It's beginner-friendly, clear, and includes every step you need.
 
-🧱 Project Overview
+---
 
-Framework: Next.js (v15+)
+## 🧱 Project Overview
 
-Build method: output: 'export' (static HTML)
+- **Framework:** Next.js (v15+)
+- **Build method:** Static export (`output: 'export'`)
+- **Editor:** Firebase Studio (cloud-based) and VS Code (locally)
+- **Deployment:** Firebase Hosting (via CLI)
+- **Version Control:** GitHub (optional but recommended)
 
-Editor: Firebase Studio (cloud-based) and VS Code (locally)
+---
 
-Deployment: Firebase Hosting (via CLI)
+## 🛠 Local Environment Setup
 
-Version Control: GitHub (optional but recommended)
+1. **Clone your repo from GitHub**
 
-🛠 Local Environment Setup
-
-Clone your repo from GitHub
-
+```bash
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
-
 Install dependencies
 
+bash
+Copy
+Edit
 npm install
-
 Configure next.config.ts
 
+ts
+Copy
+Edit
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -45,39 +50,50 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+Set up .gitignore
 
-Set up .gitignore (from project root)
-
+gitignore
+Copy
+Edit
 /node_modules
 /.next
 /out
-
 🌐 Firebase Hosting Setup (CLI)
+You do not need Firebase Data Connect or GraphQL features to deploy a static site.
 
 Install Firebase CLI
 
+bash
+Copy
+Edit
 npm install -g firebase-tools
-
 Login to Firebase
 
+bash
+Copy
+Edit
 firebase login
-
 Initialize Firebase in your project
 
+bash
+Copy
+Edit
 firebase init hosting
+Choose: Use an existing project
 
-Choose "Use an existing project"
+Select your Firebase project (e.g. start341-portfolio-showcase)
 
-Choose your Firebase project (e.g. start341-portfolio-showcase)
+Set public directory to out
 
-Set public directory as out
+Choose: No for SPA rewrite (unless your app needs it)
 
-Say No to SPA rewrite unless needed
-
-Say No to GitHub deploys if you're using CLI
+Choose: No for GitHub deploys (if deploying manually)
 
 Update firebase.json if needed
 
+json
+Copy
+Edit
 {
   "hosting": {
     "public": "out",
@@ -85,67 +101,59 @@ Update firebase.json if needed
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
-
 🚀 Building and Deploying (Local Workflow)
+Build your static site
 
-1. Build the static site
-
+bash
+Copy
+Edit
 npm run build
+This generates your site into the out/ directory.
 
-2. Deploy using Firebase CLI
+Deploy to Firebase Hosting
 
+bash
+Copy
+Edit
 firebase deploy --only hosting
-
-✅ Your site is now live at: https://<project-id>.web.app
+✅ Your site is now live at:
+https://<your-project-id>.web.app
 
 ✏️ Using Firebase Studio for Cloud-Based Editing
+Firebase Studio allows you to:
 
-You can log into Firebase Studio to:
+View and edit files (like a browser-based VS Code)
 
-View your repo files
+Connect to GitHub
 
-Edit files (like in VS Code)
+Push/pull commits
 
-Push changes to GitHub (if connected)
-
-Note: Firebase Studio does not run npm run build. You must build locally to regenerate /out.
+🔥 Important: Firebase Studio does not run npm run build.
+You must build your site locally to regenerate /out.
 
 🔁 Best Practice Summary
-
-Task
-
-Tool
-
-Code Editing
-
-Firebase Studio or VS Code
-
-Build Project
-
-Local machine using VS Code terminal
-
-Deploy to Firebase
-
-Firebase CLI (firebase deploy)
-
-Track changes
-
-GitHub (optional, but helpful)
+Task	Tool
+Code Editing	Firebase Studio / VS Code
+Build Project	VS Code terminal
+Deploy to Firebase	Firebase CLI (firebase deploy)
+Track changes	GitHub (optional)
 
 ✅ You Now Have:
+A clean static Next.js site
 
-A clean, static Next.js site
+Firebase Studio for quick browser-based edits
 
-Firebase Studio for quick edits
+VS Code for full developer control
 
-VS Code for full control
-
-One-command deploys using Firebase CLI
+One-command deploys via Firebase CLI
 
 Enjoy your blazing-fast, no-server-needed site! 🚀
-
-Let me know if you want to automate builds later with GitHub Actions!
-
